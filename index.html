@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,7 +15,8 @@
   <body>
     <div class="main">
       <div class="flower">
-        <canvas id="canvas3d"></canvas>
+        <img class="bg" src="./assets/bg.svg" />
+        <!-- <canvas id="canvas3d"></canvas> -->
       </div>
       <div
         class="text-poema"
@@ -82,6 +83,27 @@
         <br />
         Carapicuiba - 06345-040
       </div>
+      <div id="divider"></div>
+      <div
+        class="text-information"
+        style="
+          font-family: olimpico, sans-serif;
+          font-weight: 700;
+          font-style: normal;
+        "
+      >
+        Poço dos desejos
+      </div>
+      <button class="button" id="linkButton1">
+        <img class="location-img" src="./assets/gift.svg" alt="gift-icon" />
+      </button>
+      <div class="header">
+        <img
+          class="logo-img"
+          src="./assets/flowers.webp"
+          alt="Raphael & Vitoria"
+        />
+      </div>
       <!-- <div class="buttons">
         <div id="linkButton1" class="button_purple">I'm a Synergy client</div>
         <div id="linkButton2" class="button_pink">I'm a Synergy Employee</div>
@@ -90,14 +112,6 @@
         </div>
       </div> -->
     </div>
-    <div class="pink"></div>
-    <script>
-      document
-        .getElementById("linkButton1")
-        .addEventListener("click", function () {
-          window.location.href = "client.html"; // Change to your desired link
-        });
-    </script>
     <script>
       function mapsSelector() {
         if (
@@ -107,7 +121,7 @@
           navigator.platform.indexOf("iPad") != -1
         )
           window.open(
-            "https://maps.apple.com/?address=Rua%20Guaraci,%2060,%20Chacara%20de%20La%20Rocca,%20Carapicu%C3%ADba%20-%20SP,%2006345-040,%20Brazil&ll=-23.572717,-46.841798&q=Rua%20Guaraci,%2060&t=r",
+            "https://maps.apple.com/?address=Rua%20Guaraci,%2060,%20Chacara%20de%20La%20Rocca,%20Carapicu%C3%ADba%20-%20SP,%2006345-040,%20Brazil&ll=-23.572717,-46.841798&q=Rua%20Guaraci,%2060&t=r"
           );
         /* else use Google */ else
           window.open("https://maps.app.goo.gl/RWcoJhhJkjauCXKW9");
@@ -115,16 +129,9 @@
     </script>
     <script>
       document
-        .getElementById("linkButton2")
+        .getElementById("linkButton1")
         .addEventListener("click", function () {
-          window.location.href = "random.html"; // Change to your desired link
-        });
-    </script>
-    <script>
-      document
-        .getElementById("linkButton3")
-        .addEventListener("click", function () {
-          window.location.href = "random.html"; // Change to your desired link
+          window.location.href = "https://www.vakinha.com.br/4273482"; // Change to your desired link
         });
     </script>
     <script

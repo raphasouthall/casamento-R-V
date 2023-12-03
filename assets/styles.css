@@ -2,6 +2,7 @@ body,
 html {
   margin: 0;
   background-color: #f3f3ed;
+  overflow-x: hidden;
 }
 
 canvas {
@@ -13,6 +14,11 @@ canvas {
   position: absolute;
   height: 100vh;
   z-index: -1;
+  /* overflow: auto; */
+}
+
+.bg {
+  height: 150vh;
 }
 
 .header {
@@ -98,7 +104,7 @@ canvas {
   /* height: 20vh; */
   font-size: 1.2rem;
   text-align: center;
-  color: #ffffff;
+  /* color: #ffffff; */
   /* margin-top: 2rem; */
   /* padding: 1rem; */
   /* margin-left: 2rem; */
@@ -107,10 +113,13 @@ canvas {
 .button {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
   padding: 0.5rem;
-  background: #dda15e;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out 1s;
+  background: #e7c788;
+  border-radius: 50%;
+  /* transition: all 0.3s ease-in-out 1s; */
   cursor: pointer;
   outline: none;
   position: relative;
@@ -118,8 +127,7 @@ canvas {
 
 button::after {
   content: "";
-  width: 30px;
-  height: 30px;
+
   border-radius: 100%;
   border: 6px solid #ffffff;
   position: absolute;
@@ -128,17 +136,32 @@ button::after {
   left: 50%;
   transform: translate(-50%, -50%);
   animation: ring 2s infinite;
+  -webkit-animation: ring 2s infinite;
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
 }
 
 @keyframes ring {
   0% {
     width: 30px;
     height: 30px;
-    opacity: 1;
+    opacity: 0.8;
   }
   100% {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     opacity: 0;
   }
+}
+
+#divider {
+  height: 2px;
+  width: 80%;
+  background: blue;
+  background: linear-gradient(
+    90deg,
+    hsl(0, 0%, 20%),
+    hsl(0, 0%, 70%),
+    hsl(0, 0%, 20%)
+  );
 }
