@@ -3,6 +3,7 @@ html {
   margin: 0;
   background-color: #f3f3ed;
   overflow-x: hidden;
+  height: 100vh;
 }
 
 canvas {
@@ -11,14 +12,16 @@ canvas {
 }
 
 .flower {
-  position: absolute;
-  height: 100vh;
+  /* position: absolute; */
+  height: 1vh;
   z-index: -1;
-  /* overflow: auto; */
 }
 
-.bg {
+.bg-1 {
   height: 150vh;
+  margin-top: -10rem;
+  opacity: 0.5;
+  position: relative;
 }
 
 .header {
